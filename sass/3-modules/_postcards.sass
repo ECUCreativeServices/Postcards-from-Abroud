@@ -1,0 +1,91 @@
+/* POSTCARDS */
+.postcard
+  float: left
+  padding-bottom: 75px
+  .place
+    h2
+      font-size: 80px
+      z-index: 3
+      position: absolute
+      letter-spacing: 3px
+      font-family: $cursive
+      text-shadow: -3px -3px 0 #222, 3px -3px 0 #222, -3px 3px 0 #222, 3px 3px 0 #222, 4px 4px 0 #fff, 5px 5px 0 #fff, 6px 6px 0 #fff, 7px 7px 0 #fff
+      color: $ecu-gold-burnt
+      line-height: 70px
+  .front
+    background: url(../images/article_bg.jpg)
+    padding: 15px
+    width: 100%
+    max-width: 300px
+    float: left
+    +shadow(0, 0, 25px, $primary)
+    border-radius: 5px
+    position: relative
+    left: 0px
+    top: 0px
+    z-index: 1
+    @media (min-width: $sm)
+      transform: rotate(3deg)
+      transition: all 0.5s ease
+  .back
+    width: 100%
+    background: url(../images/article_bg.jpg)
+    +shadow(0, 0, 25px, $primary)
+    border-radius: 5px
+    padding-bottom: 20px
+    z-index: 2
+    position: absolute
+    margin: 100px 0 0 0
+    @media (min-width: $sm)
+      z-index: 0
+      margin: 45px 0 0 110px
+      max-width: 500px
+      transform: rotate(-1deg)
+      transition: all 0.5s ease
+    @media (min-width: $lg)
+      max-width: 450px
+    header
+      background: url(../images/article_header.png) no-repeat top right
+      height: 100px
+      width: 100%
+      @media (min-width: $lg)
+        height: 90px
+        background-size: 100%
+        width: 54%
+        float: right
+  .meta
+    width: 85%
+    background: linear-gradient(to bottom,transparent 28px,$primary 1px)
+    background-size: 100% 29px
+    margin: 7%
+    @media (min-width: $sm)
+      float: right
+      width: 50%
+      margin: 0px 20px 0 0
+    p
+      font-family: $cursive
+      font-size: 20px
+      font-weight: normal
+      line-height: 29px
+      color: $black
+      height: 187px
+  &:hover
+    .front, .back
+      transform: rotate(0deg)
+
+
+#card--europe,
+#card--costa,
+#card--globe
+  .front
+    @media (min-width: $sm)
+      float: right
+      transform: rotate(-3deg)
+      transition: all 0.5s ease
+  .back
+    @media (min-width: $sm)
+      transform: rotate(2deg)
+      transition: all 0.5s ease
+  &:hover
+    .front, .back
+      transform: rotate(0deg)

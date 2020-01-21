@@ -1,0 +1,157 @@
+/* BASE STYLES */
+
+*
+  padding: 0px
+  margin: 0px
+
+a
+  text-decoration: none
+
+.fixed
+  position: fixed
+  top: 0
+  height: 70px
+  z-index: 1
+
+body
+  color: #fff
+  padding: 0 0 2rem
+
+.container
+  @media (min-width: $lg)
+    max-width: $lg
+
+/* Images */
+
+.img-stretch
+  display: block
+  height: auto
+  width: 100%
+
+.content-image
+  max-width: 100%
+  &.img-right
+    margin: 0px 0px 15px 15px
+    float: right
+  &.img-left
+    margin: 0px 15px 15px 0px
+    float: left
+  @media (min-width: $sm)
+    max-width: 25% !important
+
+/* Visibility */
+
+.hidden-xs
+  display: none !important
+  @media (min-width: $sm)
+    display: block !important
+
+.visible-xs
+  display: block !important
+  @media (min-width: $sm)
+    display: none !important
+
+.hidden-sm
+  display: block !important
+  @media (min-width: $sm)
+    display: none !important
+  @media (min-width: $md)
+    display: block !important
+
+.visible-sm
+  display: none !important
+  @media (min-width: $sm)
+    display: block !important
+  @media (min-width: $md)
+    display: none !important
+
+.hidden-md
+  display: block !important
+  @media (min-width: $sm)
+    display: none !important
+
+  @media (min-width: $lg)
+    display: block !important
+.visible-md
+  display: none !important
+  @media (min-width: $md)
+    display: block !important
+  @media (min-width: $lg)
+    display: none !important
+
+.hidden-lg
+  display: block !important
+  @media (min-width: $lg)
+    display: none !important
+
+.visible-lg
+  display: none !important
+  @media (min-width: $lg)
+    display: block !important
+
+/* XS */
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12
+  position: relative
+  width: 100%
+  min-height: 1px
+  padding-right: 15px
+  padding-left: 15px
+
+.col-xs-1
+  flex: 0 0 8.33333%
+  max-width: 8.33333%
+
+.col-xs-2
+  flex: 0 0 16.66666%
+  max-width: 16.66666%
+
+.col-xs-3
+  flex: 0 0 25%
+  max-width: 25%
+
+.col-xs-4
+  flex: 0 0 33.33333%
+  max-width: 33.33333%
+
+.col-xs-5
+  flex: 0 0 41.66666%
+  max-width: 41.66666%
+
+.col-xs-6
+  flex: 0 0 50%
+  max-width: 50%
+
+.col-xs-7
+  flex: 0 0 58.33333%
+  max-width: 58.33333%
+
+.col-xs-8
+  flex: 0 0 66.66666%
+  max-width: 66.66666%
+
+.col-xs-9
+  flex: 0 0 75%
+  max-width: 75%
+
+.col-xs-10
+  flex: 0 0 83.33333%
+  max-width: 83.33333%
+
+.col-xs-11
+  flex: 0 0 91.66666%
+  max-width: 91.66666%
+
+.col-xs-12
+  flex: 0 0 100%
+  max-width: 100%
